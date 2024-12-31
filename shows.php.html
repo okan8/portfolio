@@ -1,12 +1,11 @@
 ﻿
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
     <!-- Google tag (gtag.js) -->
-    <script async="" src="gtag/js?id=G-643BP6RQ82" type="1f7f775f9f8e4e282da2860c-text/javascript"></script>
-    <script type="1f7f775f9f8e4e282da2860c-text/javascript">
+    <script async="" src="gtag/js?id=G-643BP6RQ82" type="25bf57c686a0d908593fdb3a-text/javascript"></script>
+    <script type="25bf57c686a0d908593fdb3a-text/javascript">
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
@@ -22,21 +21,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Watch all your favorite movies and TV shows, free and ad-free, anytime, anywhere with Stigstream! Enjoy endless entertainment without interruptions. Stream on any device and dive into a world of fun, whenever you want. Stigstream: Your go-to place for nonstop, hassle-free watching!">
     <meta name="keywords" content="Free movies online, Unlimited TV shows, Ad-free streaming, Watch movies, HD movies and tv shows, free movie site, free movies">
-    <title>StigStream</title>
+
     
     <link rel="icon" href="assets/images/logo.png">
-    <link rel="stylesheet" href="fa/css/all.min.css">
-    <link rel="stylesheet" href="ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>StigStream - Shows</title>
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/shows.css">
+    <link href="ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
-            <script type="1f7f775f9f8e4e282da2860c-text/javascript" src='//magicianmost.com/a6/bd/99/a6bd99b1d40fd76d9045c4d576578985.js'></script>
-    
-</head>
-
+            <script type="25bf57c686a0d908593fdb3a-text/javascript" src='//magicianmost.com/a6/bd/99/a6bd99b1d40fd76d9045c4d576578985.js'></script>
+    </head>
 <body>
-    <div class="modal-backdrop"></div>
 
-    <!-- Main application container -->
+
     <div class="app-container">
         
 
@@ -61,11 +58,11 @@
         
         <!-- Navigation links -->
         <div class="nav-links">
-            <a href="index.htm" class="nav-link active">
+            <a href="index.htm" class="nav-link ">
                 <i class="fas fa-home"></i>
                 <span>Home</span>
             </a>
-            <a href="shows.php.html" class="nav-link ">
+            <a href="shows.php.html" class="nav-link active">
                 <i class="fas fa-tv"></i>
                 <span>TV Shows</span>
             </a>
@@ -124,11 +121,11 @@
     <div class="sidebar-content">
         <div class="nav-links">
             <!-- Mobile navigation items -->
-            <a href="index.htm" class="nav-link active">
+            <a href="index.htm" class="nav-link ">
                 <i class="fas fa-home"></i>
                 <span>Home</span>
             </a>
-            <a href="shows.php.html" class="nav-link ">
+            <a href="shows.php.html" class="nav-link active">
                 <i class="fas fa-tv"></i>
                 <span>TV Shows</span>
             </a>
@@ -153,53 +150,53 @@
                     </div>
     </div>
 </nav>
-        <!-- Main content area -->
+        <!-- Main Content -->
         <main class="main-content">
-            <!-- Hero section for featured content -->
-            <section class="section hero">
-            </section>
-            
-            <!-- Content sections for different categories -->
-            <section class="section content">
-                <!-- Popular Movies Section -->
-                <section id="popular-movies">
-                    <h2 class="section-title">Popular Movies</h2>
-                    <div class="row">
-                        <!-- Dynamic movie cards container -->
+            <div class="content">
+                <section>
+                    <div class="shows-header">
+                        <h1 id="shows" class="section-title">TV Shows</h1>
+    
+                        <div class="filter-controls">
+                            <select class="filter-select" data-filter="genre">
+                                <option value="all">All Genres</option>
+                            </select>
+                            
+                            <select class="filter-select" data-filter="sort">
+                                <option value="popular">Most Popular</option>
+                                <option value="topRated">Top Rated</option>
+                            </select>
+                        </div>
+                    </div>
+    
+                    <div class="shows-grid">
+                        <!-- Movie cards will be populated here -->
+                    </div>
+    
+                    <div class="pagination-controls">
+                        <button class="pagination-button" id="prev-page" disabled="">
+                            <i class="fas fa-chevron-left"></i> Previous
+                        </button>
+                        <span class="page-display">Page <span id="current-page">1</span> of <span id="total-pages">323131</span></span>
+                        <button class="pagination-button" id="next-page">
+                            Next <i class="fas fa-chevron-right"></i>
+                        </button>
                     </div>
                 </section>
-
-                <!-- Trending TV Shows Section -->
-                <section id="popular-tv-shows">
-                    <h2 class="section-title">Trending TV Shows</h2>
-                    <div class="row">
-                        <!-- Dynamic TV show cards container -->
-                    </div>
-                </section>
-
-                <!-- Top Rated Movies Section -->
-                <section id="top-rated-movies">
-                    <h2 class="section-title">Top Rated Movies</h2>
-                    <div class="row">
-                        <!-- Dynamic movie cards container -->
-                    </div>
-                </section>
-
-                <!-- Top Rated TV Shows Section -->
-                <section id="top-rated-tv-shows">
-                    <h2 class="section-title">Top Rated TV Shows</h2>
-                    <div class="row">
-                        <!-- Dynamic TV show cards container -->
-                    </div>
-                </section>
-            </section>
+            </div>
         </main>
+
+        <!-- Mobile Overlay -->
+        <div class="mobile-overlay"></div>
     </div>
 
     <!-- Login Modal -->
     <div class="modal" id="loginModal">
         <div class="modal-content">
+            <!-- Modal close button -->
             <span class="close-btn" id="closeModal">&times;</span>
+            
+            <!-- Login form section -->
             <div class="modal-left">
                 <h2>Login</h2>
                 <form action="login.php" method="POST">
@@ -216,7 +213,10 @@
     <!-- Registration Modal -->
     <div class="modal" id="registerModal">
         <div class="modal-content">
+            <!-- Modal close button -->
             <span class="close-btn" id="closeRegisterModal">&times;</span>
+            
+            <!-- Registration form section -->
             <div class="modal-left">
                 <h2>Sign Up</h2>
                 <form action="register.php" method="POST">
@@ -231,14 +231,13 @@
         </div>
     </div>
 
-    <script type="1f7f775f9f8e4e282da2860c-text/javascript">
+    <script type="25bf57c686a0d908593fdb3a-text/javascript">
         // DOM Elements
         const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
         const mobileSidebar = document.querySelector('.mobile-sidebar');
         const mobileOverlay = document.querySelector('.mobile-overlay');
         const closeMobileSidebar = document.querySelector('.close-mobile-sidebar');
         const accountLink = document.getElementById('accountLink');
-        const mobileAccountLinks = document.querySelectorAll('#accountLink');
         const loginModal = document.getElementById('loginModal');
         const registerModal = document.getElementById('registerModal');
         const closeModal = document.getElementById('closeModal');
@@ -250,39 +249,17 @@
         const closeSearch = document.querySelector('.close-search');
         const toggleSidebar = document.querySelector('.toggle-sidebar');
         const desktopSidebar = document.querySelector('.desktop-sidebar');
-        const backdrop = document.querySelector('.modal-backdrop');
+        
+        // Create backdrop
+        const backdrop = document.createElement('div');
+        backdrop.className = 'modal-backdrop';
+        document.body.appendChild(backdrop);
 
         // Functions
         function closeAllModals() {
-            if (loginModal) {
-                loginModal.classList.remove('show');
-            }
-            if (registerModal) {
-                registerModal.classList.remove('show');
-            }
-            if (backdrop) {
-                backdrop.classList.remove('show');
-            }
-            // Reset body scroll
-            document.body.style.overflow = '';
-        }
-
-        // Make sure these event listeners are only added once
-        if (!window.modalListenersAdded) {
-            // Update close button event listeners
-            const closeButtons = document.querySelectorAll('.close-btn');
-            if (closeButtons) {
-                closeButtons.forEach(button => {
-                    button.addEventListener('click', closeAllModals);
-                });
-            }
-
-            // Close modal when clicking backdrop
-            if (backdrop) {
-                backdrop.addEventListener('click', closeAllModals);
-            }
-
-            window.modalListenersAdded = true;
+            loginModal.classList.remove('show');
+            registerModal.classList.remove('show');
+            backdrop.classList.remove('show');
         }
 
         function closeSidebar() {
@@ -291,31 +268,17 @@
             document.body.style.overflow = '';
         }
 
-        function showLoginModal(event) {
-            if (event) {
-                event.preventDefault();
-            }
-            
-            if (loginModal) {
-                loginModal.classList.add('show');
-            }
-            
-            if (backdrop) {
-                backdrop.classList.add('show');
-            }
-            
-            document.body.style.overflow = 'hidden';
-        }
-
         // Event Listeners
-        if (accountLink) {
-            accountLink.addEventListener('click', function(event) {
-                const accountName = this.querySelector('.account-name');
-                if (accountName && accountName.textContent.trim() === "Log In") {
-                    showLoginModal(event);
+        document.querySelectorAll('.account-link').forEach(link => {
+            link.addEventListener('click', function(event) {
+                const username = this.querySelector('.account-name').textContent.trim();
+                if (username === "Log In") {
+                    event.preventDefault();
+                    loginModal.classList.add('show');
+                    backdrop.classList.add('show');
                 }
             });
-        }
+        });
 
         if (openRegisterModal) {
             openRegisterModal.addEventListener('click', function() {
@@ -331,46 +294,9 @@
             });
         }
 
-        if (mobileAccountLinks) {
-            mobileAccountLinks.forEach(link => {
-                link.addEventListener('click', function(event) {
-                    const accountName = this.querySelector('.account-name');
-                    if (accountName && accountName.textContent.trim() === "Log In") {
-                        showLoginModal(event);
-                    }
-                });
-            });
-        }
-
-        if (openRegisterModal) {
-            openRegisterModal.addEventListener('click', function(e) {
-                e.preventDefault();
-                loginModal.classList.remove('show');
-                registerModal.classList.add('show');
-            });
-        }
-
-        if (openLoginModal) {
-            openLoginModal.addEventListener('click', function(e) {
-                e.preventDefault();
-                registerModal.classList.remove('show');
-                loginModal.classList.add('show');
-            });
-        }
-
-        // Close modal on escape key
-        document.addEventListener('keydown', function(event) {
-            if (event.key === 'Escape') {
-                closeAllModals();
-            }
-        });
-
-        // Prevent modal content clicks from closing the modal
-        document.querySelectorAll('.modal-content').forEach(content => {
-            content.addEventListener('click', function(e) {
-                e.stopPropagation();
-            });
-        });
+        if (closeModal) closeModal.addEventListener('click', closeAllModals);
+        if (closeRegisterModal) closeRegisterModal.addEventListener('click', closeAllModals);
+        if (backdrop) backdrop.addEventListener('click', closeAllModals);
 
         // Mobile menu handlers
         if (mobileMenuToggle) {
@@ -482,10 +408,8 @@
         setInterval(checkUsernameUpdates, 5000);
     </script>
 
-   
+    <script src="assets/js/shows.js" type="25bf57c686a0d908593fdb3a-text/javascript"></script>
 
-    <script src="assets/js/homepage.js" type="1f7f775f9f8e4e282da2860c-text/javascript"></script>
-    <script src="assets/js/snow.js" type="1f7f775f9f8e4e282da2860c-text/javascript"></script>
-<script src="cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="1f7f775f9f8e4e282da2860c-|49" defer=""></script></body>
 
+<script src="cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="25bf57c686a0d908593fdb3a-|49" defer=""></script></body>
 </html>

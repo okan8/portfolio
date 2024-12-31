@@ -1,88 +1,236 @@
-Uri: https://2rxexobyqw2auxlj.vercel.app/
-File Name: C:\Downloaded Web Sites\2rxexobyqw2auxlj.vercel.app\index.htm
-Content Type: text/html
-
-Uri: https://2rxexobyqw2auxlj.vercel.app/_next/static/chunks/117-3c80c5524fc4d093.js
-File Name: C:\Downloaded Web Sites\2rxexobyqw2auxlj.vercel.app\_next\static\chunks\117-3c80c5524fc4d093.js
-Content Type: application/javascript
-
-Uri: https://2rxexobyqw2auxlj.vercel.app/_next/static/chunks/336-688f907287cf3b74.js
-File Name: C:\Downloaded Web Sites\2rxexobyqw2auxlj.vercel.app\_next\static\chunks\336-688f907287cf3b74.js
-Content Type: application/javascript
-
-Uri: https://2rxexobyqw2auxlj.vercel.app/_next/static/chunks/681-7d92351850aa51fb.js
-File Name: C:\Downloaded Web Sites\2rxexobyqw2auxlj.vercel.app\_next\static\chunks\681-7d92351850aa51fb.js
-Content Type: application/javascript
-
-Uri: https://2rxexobyqw2auxlj.vercel.app/_next/static/chunks/697-7246b72b64d03736.js
-File Name: C:\Downloaded Web Sites\2rxexobyqw2auxlj.vercel.app\_next\static\chunks\697-7246b72b64d03736.js
-Content Type: application/javascript
-
-Uri: https://2rxexobyqw2auxlj.vercel.app/_next/static/chunks/app/layout-7b14117e61dbd981.js
-File Name: C:\Downloaded Web Sites\2rxexobyqw2auxlj.vercel.app\_next\static\chunks\app\layout-7b14117e61dbd981.js
-Content Type: application/javascript
-
-Uri: https://2rxexobyqw2auxlj.vercel.app/_next/static/chunks/app/page-6e7c5027bd1903f2.js
-File Name: C:\Downloaded Web Sites\2rxexobyqw2auxlj.vercel.app\_next\static\chunks\app\page-6e7c5027bd1903f2.js
-Content Type: application/javascript
-
-Uri: https://2rxexobyqw2auxlj.vercel.app/_next/static/chunks/fd9d1056-ac47f7b4a1759b90.js
-File Name: C:\Downloaded Web Sites\2rxexobyqw2auxlj.vercel.app\_next\static\chunks\fd9d1056-ac47f7b4a1759b90.js
-Content Type: application/javascript
-
-Uri: https://2rxexobyqw2auxlj.vercel.app/_next/static/chunks/main-app-b840e258ff6945a0.js
-File Name: C:\Downloaded Web Sites\2rxexobyqw2auxlj.vercel.app\_next\static\chunks\main-app-b840e258ff6945a0.js
-Content Type: application/javascript
-
-Uri: https://2rxexobyqw2auxlj.vercel.app/_next/static/chunks/polyfills-42372ed130431b0a.js
-File Name: C:\Downloaded Web Sites\2rxexobyqw2auxlj.vercel.app\_next\static\chunks\polyfills-42372ed130431b0a.js
-Content Type: application/javascript
-
-Uri: https://2rxexobyqw2auxlj.vercel.app/_next/static/chunks/webpack-b2b1d3b13f9c8f08.js
-File Name: C:\Downloaded Web Sites\2rxexobyqw2auxlj.vercel.app\_next\static\chunks\webpack-b2b1d3b13f9c8f08.js
-Content Type: application/javascript
-
-Uri: https://2rxexobyqw2auxlj.vercel.app/_next/static/css/4fee38544cd7089f.css
-File Name: C:\Downloaded Web Sites\2rxexobyqw2auxlj.vercel.app\_next\static\css\4fee38544cd7089f.css
+Uri: https://assets.cdak.ws/fa/css/all.min.css
+File Name: C:\Downloaded Web Sites\stigstream.com\fa\css\all.min.css
 Content Type: text/css
 
-Uri: https://2rxexobyqw2auxlj.vercel.app/_next/static/media/0484562807a97172-s.p.woff2
-File Name: C:\Downloaded Web Sites\2rxexobyqw2auxlj.vercel.app\_next\static\media\0484562807a97172-s.p.woff2
-Content Type: font/woff2
+Uri: https://assets.cdak.ws/fa/webfonts/fa-brands-400.ttf
+File Name: C:\Downloaded Web Sites\stigstream.com\fa\webfonts\fa-brands-400.ttf
+Content Type: application/octet-stream
 
-Uri: https://2rxexobyqw2auxlj.vercel.app/_next/static/media/4c285fdca692ea22-s.p.woff2
-File Name: C:\Downloaded Web Sites\2rxexobyqw2auxlj.vercel.app\_next\static\media\4c285fdca692ea22-s.p.woff2
-Content Type: font/woff2
+Uri: https://assets.cdak.ws/fa/webfonts/fa-brands-400.woff2
+File Name: C:\Downloaded Web Sites\stigstream.com\fa\webfonts\fa-brands-400.woff2
+Content Type: application/octet-stream
 
-Uri: https://2rxexobyqw2auxlj.vercel.app/_next/static/media/6c9a125e97d835e1-s.woff2
-File Name: C:\Downloaded Web Sites\2rxexobyqw2auxlj.vercel.app\_next\static\media\6c9a125e97d835e1-s.woff2
-Content Type: font/woff2
+Uri: https://assets.cdak.ws/fa/webfonts/fa-duotone-900.ttf
+File Name: C:\Downloaded Web Sites\stigstream.com\fa\webfonts\fa-duotone-900.ttf
+Content Type: application/octet-stream
 
-Uri: https://2rxexobyqw2auxlj.vercel.app/_next/static/media/8888a3826f4a3af4-s.p.woff2
-File Name: C:\Downloaded Web Sites\2rxexobyqw2auxlj.vercel.app\_next\static\media\8888a3826f4a3af4-s.p.woff2
-Content Type: font/woff2
+Uri: https://assets.cdak.ws/fa/webfonts/fa-duotone-900.woff2
+File Name: C:\Downloaded Web Sites\stigstream.com\fa\webfonts\fa-duotone-900.woff2
+Content Type: application/octet-stream
 
-Uri: https://2rxexobyqw2auxlj.vercel.app/_next/static/media/a1386beebedccca4-s.woff2
-File Name: C:\Downloaded Web Sites\2rxexobyqw2auxlj.vercel.app\_next\static\media\a1386beebedccca4-s.woff2
-Content Type: font/woff2
+Uri: https://assets.cdak.ws/fa/webfonts/fa-light-300.ttf
+File Name: C:\Downloaded Web Sites\stigstream.com\fa\webfonts\fa-light-300.ttf
+Content Type: application/octet-stream
 
-Uri: https://2rxexobyqw2auxlj.vercel.app/_next/static/media/b957ea75a84b6ea7-s.p.woff2
-File Name: C:\Downloaded Web Sites\2rxexobyqw2auxlj.vercel.app\_next\static\media\b957ea75a84b6ea7-s.p.woff2
-Content Type: font/woff2
+Uri: https://assets.cdak.ws/fa/webfonts/fa-light-300.woff2
+File Name: C:\Downloaded Web Sites\stigstream.com\fa\webfonts\fa-light-300.woff2
+Content Type: application/octet-stream
 
-Uri: https://2rxexobyqw2auxlj.vercel.app/_next/static/media/c3bc380753a8436c-s.woff2
-File Name: C:\Downloaded Web Sites\2rxexobyqw2auxlj.vercel.app\_next\static\media\c3bc380753a8436c-s.woff2
-Content Type: font/woff2
+Uri: https://assets.cdak.ws/fa/webfonts/fa-regular-400.ttf
+File Name: C:\Downloaded Web Sites\stigstream.com\fa\webfonts\fa-regular-400.ttf
+Content Type: application/octet-stream
 
-Uri: https://2rxexobyqw2auxlj.vercel.app/_next/static/media/eafabf029ad39a43-s.p.woff2
-File Name: C:\Downloaded Web Sites\2rxexobyqw2auxlj.vercel.app\_next\static\media\eafabf029ad39a43-s.p.woff2
-Content Type: font/woff2
+Uri: https://assets.cdak.ws/fa/webfonts/fa-regular-400.woff2
+File Name: C:\Downloaded Web Sites\stigstream.com\fa\webfonts\fa-regular-400.woff2
+Content Type: application/octet-stream
 
-Uri: https://2rxexobyqw2auxlj.vercel.app/_next/static/media/f10b8e9d91f3edcb-s.woff2
-File Name: C:\Downloaded Web Sites\2rxexobyqw2auxlj.vercel.app\_next\static\media\f10b8e9d91f3edcb-s.woff2
-Content Type: font/woff2
+Uri: https://assets.cdak.ws/fa/webfonts/fa-solid-900.ttf
+File Name: C:\Downloaded Web Sites\stigstream.com\fa\webfonts\fa-solid-900.ttf
+Content Type: application/octet-stream
 
-Uri: https://2rxexobyqw2auxlj.vercel.app/_next/static/media/fe0777f1195381cb-s.woff2
-File Name: C:\Downloaded Web Sites\2rxexobyqw2auxlj.vercel.app\_next\static\media\fe0777f1195381cb-s.woff2
-Content Type: font/woff2
+Uri: https://assets.cdak.ws/fa/webfonts/fa-solid-900.woff2
+File Name: C:\Downloaded Web Sites\stigstream.com\fa\webfonts\fa-solid-900.woff2
+Content Type: application/octet-stream
+
+Uri: https://assets.cdak.ws/fa/webfonts/fa-thin-100.ttf
+File Name: C:\Downloaded Web Sites\stigstream.com\fa\webfonts\fa-thin-100.ttf
+Content Type: application/octet-stream
+
+Uri: https://assets.cdak.ws/fa/webfonts/fa-thin-100.woff2
+File Name: C:\Downloaded Web Sites\stigstream.com\fa\webfonts\fa-thin-100.woff2
+Content Type: application/octet-stream
+
+Uri: https://assets.cdak.ws/fa/webfonts/fa-v4compatibility.ttf
+File Name: C:\Downloaded Web Sites\stigstream.com\fa\webfonts\fa-v4compatibility.ttf
+Content Type: application/octet-stream
+
+Uri: https://assets.cdak.ws/fa/webfonts/fa-v4compatibility.woff2
+File Name: C:\Downloaded Web Sites\stigstream.com\fa\webfonts\fa-v4compatibility.woff2
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css
+File Name: C:\Downloaded Web Sites\stigstream.com\ajax\libs\font-awesome\6.4.0\css\all.min.css
+Content Type: text/css
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-brands-400.ttf
+File Name: C:\Downloaded Web Sites\stigstream.com\ajax\libs\font-awesome\6.4.0\webfonts\fa-brands-400.ttf
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-brands-400.woff2
+File Name: C:\Downloaded Web Sites\stigstream.com\ajax\libs\font-awesome\6.4.0\webfonts\fa-brands-400.woff2
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-regular-400.ttf
+File Name: C:\Downloaded Web Sites\stigstream.com\ajax\libs\font-awesome\6.4.0\webfonts\fa-regular-400.ttf
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-regular-400.woff2
+File Name: C:\Downloaded Web Sites\stigstream.com\ajax\libs\font-awesome\6.4.0\webfonts\fa-regular-400.woff2
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-solid-900.ttf
+File Name: C:\Downloaded Web Sites\stigstream.com\ajax\libs\font-awesome\6.4.0\webfonts\fa-solid-900.ttf
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-solid-900.woff2
+File Name: C:\Downloaded Web Sites\stigstream.com\ajax\libs\font-awesome\6.4.0\webfonts\fa-solid-900.woff2
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-v4compatibility.ttf
+File Name: C:\Downloaded Web Sites\stigstream.com\ajax\libs\font-awesome\6.4.0\webfonts\fa-v4compatibility.ttf
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-v4compatibility.woff2
+File Name: C:\Downloaded Web Sites\stigstream.com\ajax\libs\font-awesome\6.4.0\webfonts\fa-v4compatibility.woff2
+Content Type: application/octet-stream
+
+Uri: https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap
+File Name: C:\Downloaded Web Sites\stigstream.com\css2
+Content Type: text/css
+
+Uri: https://fonts.gstatic.com/s/montserrat/v29/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq0N6aX8.ttf
+File Name: C:\Downloaded Web Sites\stigstream.com\s\montserrat\v29\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq0N6aX8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v29/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq3p6aX8.ttf
+File Name: C:\Downloaded Web Sites\stigstream.com\s\montserrat\v29\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq3p6aX8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v29/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq5Z9aX8.ttf
+File Name: C:\Downloaded Web Sites\stigstream.com\s\montserrat\v29\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq5Z9aX8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v29/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq6R8aX8.ttf
+File Name: C:\Downloaded Web Sites\stigstream.com\s\montserrat\v29\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq6R8aX8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v29/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq6R9aX8.ttf
+File Name: C:\Downloaded Web Sites\stigstream.com\s\montserrat\v29\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq6R9aX8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v29/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqw16aX8.ttf
+File Name: C:\Downloaded Web Sites\stigstream.com\s\montserrat\v29\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqw16aX8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v29/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqyR6aX8.ttf
+File Name: C:\Downloaded Web Sites\stigstream.com\s\montserrat\v29\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqyR6aX8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v29/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqyR9aX8.ttf
+File Name: C:\Downloaded Web Sites\stigstream.com\s\montserrat\v29\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqyR9aX8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v29/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq_p9aX8.ttf
+File Name: C:\Downloaded Web Sites\stigstream.com\s\montserrat\v29\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq_p9aX8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v29/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCs16Ew-.ttf
+File Name: C:\Downloaded Web Sites\stigstream.com\s\montserrat\v29\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCs16Ew-.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v29/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Ew-.ttf
+File Name: C:\Downloaded Web Sites\stigstream.com\s\montserrat\v29\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Ew-.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v29/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Uw-.ttf
+File Name: C:\Downloaded Web Sites\stigstream.com\s\montserrat\v29\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Uw-.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v29/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Ew-.ttf
+File Name: C:\Downloaded Web Sites\stigstream.com\s\montserrat\v29\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Ew-.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v29/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu170w-.ttf
+File Name: C:\Downloaded Web Sites\stigstream.com\s\montserrat\v29\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu170w-.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v29/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM70w-.ttf
+File Name: C:\Downloaded Web Sites\stigstream.com\s\montserrat\v29\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM70w-.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v29/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvC70w-.ttf
+File Name: C:\Downloaded Web Sites\stigstream.com\s\montserrat\v29\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvC70w-.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v29/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr6Ew-.ttf
+File Name: C:\Downloaded Web Sites\stigstream.com\s\montserrat\v29\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr6Ew-.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v29/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr70w-.ttf
+File Name: C:\Downloaded Web Sites\stigstream.com\s\montserrat\v29\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr70w-.ttf
+Content Type: font/ttf
+
+Uri: https://stigstream.com/
+File Name: C:\Downloaded Web Sites\stigstream.com\index.htm
+Content Type: text/html
+
+Uri: https://stigstream.com/assets/css/movies.css
+File Name: C:\Downloaded Web Sites\stigstream.com\assets\css\movies.css
+Content Type: text/css
+
+Uri: https://stigstream.com/assets/css/shows.css
+File Name: C:\Downloaded Web Sites\stigstream.com\assets\css\shows.css
+Content Type: text/css
+
+Uri: https://stigstream.com/assets/css/styles.css
+File Name: C:\Downloaded Web Sites\stigstream.com\assets\css\styles.css
+Content Type: text/css
+
+Uri: https://stigstream.com/assets/images/logo.png
+File Name: C:\Downloaded Web Sites\stigstream.com\assets\images\logo.png
+Content Type: image/png
+
+Uri: https://stigstream.com/assets/js/homepage.js
+File Name: C:\Downloaded Web Sites\stigstream.com\assets\js\homepage.js
+Content Type: application/javascript
+
+Uri: https://stigstream.com/assets/js/list.js
+File Name: C:\Downloaded Web Sites\stigstream.com\assets\js\list.js
+Content Type: application/javascript
+
+Uri: https://stigstream.com/assets/js/movies.js
+File Name: C:\Downloaded Web Sites\stigstream.com\assets\js\movies.js
+Content Type: application/javascript
+
+Uri: https://stigstream.com/assets/js/shows.js
+File Name: C:\Downloaded Web Sites\stigstream.com\assets\js\shows.js
+Content Type: application/javascript
+
+Uri: https://stigstream.com/assets/js/snow.js
+File Name: C:\Downloaded Web Sites\stigstream.com\assets\js\snow.js
+Content Type: application/javascript
+
+Uri: https://stigstream.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js
+File Name: C:\Downloaded Web Sites\stigstream.com\cdn-cgi\scripts\7d0fa10a\cloudflare-static\rocket-loader.min.js
+Content Type: application/javascript
+
+Uri: https://stigstream.com/list.php
+File Name: C:\Downloaded Web Sites\stigstream.com\list.php.html
+Content Type: text/html
+
+Uri: https://stigstream.com/movies.php
+File Name: C:\Downloaded Web Sites\stigstream.com\movies.php.html
+Content Type: text/html
+
+Uri: https://stigstream.com/shows.php
+File Name: C:\Downloaded Web Sites\stigstream.com\shows.php.html
+Content Type: text/html
+
+Uri: https://via.placeholder.com/1920x1080
+File Name: C:\Downloaded Web Sites\stigstream.com\1920x1080
+Content Type: image/png
+
+Uri: https://www.googletagmanager.com/gtag/js?id=G-643BP6RQ82
+File Name: C:\Downloaded Web Sites\stigstream.com\gtag\js
+Content Type: application/javascript
 
