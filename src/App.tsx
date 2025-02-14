@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { AlertCircle, ShoppingCart, Clock, HeadphonesIcon, CheckCircle2, CreditCard, Shield, AlertTriangle, X, Zap, Lock, Wifi, Search, Eye } from 'lucide-react';
 import Terms from './pages/Terms';
 import Privacy from './pages/Privacy';
@@ -163,6 +163,16 @@ function App() {
     setShowOrderModal(false);
   };
 
+  useEffect(() => {
+    // Tawk.to Integration
+    const s1 = document.createElement("script");
+    s1.async = true;
+    s1.src = 'https://embed.tawk.to/67ae44183a842732607e7f66/1ik0bk0fn';
+    s1.charset = 'UTF-8';
+    s1.setAttribute('crossorigin', '*');
+    document.head.appendChild(s1);
+  }, []);
+
   return (
     <div className="min-h-screen bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-100 via-white to-blue-50">
       {/* Header */}
@@ -203,6 +213,28 @@ function App() {
           <p className="text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed font-light">
             Türkiye'nin en güvenilir dijital ürün satış platformunda hızlı ve güvenli alışveriş deneyimi
           </p>
+        </div>
+
+        {/* Site Purpose Section */}
+        <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-[2.5rem] shadow-2xl p-12 mb-12">
+          <h3 className="text-3xl font-bold mb-6">Sitemizin Amacı</h3>
+          <p className="text-xl leading-relaxed">
+            Sitemizin amacı kullanıcılara %20-30 oranında daha uygun robux temin etmektir. Ödemeleri gamepass yolu ile yapıyor ve anında yolluyoruz. Güvenli ve hızlı alışveriş deneyimi için en uygun çözümleri sunuyoruz.
+          </p>
+          <div className="grid grid-cols-3 gap-6 mt-8">
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+              <div className="text-3xl font-bold mb-2">%30</div>
+              <div className="text-blue-100">Daha Uygun Fiyat</div>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+              <div className="text-3xl font-bold mb-2">Anında</div>
+              <div className="text-blue-100">Teslimat</div>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+              <div className="text-3xl font-bold mb-2">7/24</div>
+              <div className="text-blue-100">Destek</div>
+            </div>
+          </div>
         </div>
 
         {/* Notices Grid */}
@@ -468,9 +500,7 @@ function App() {
             <div className="p-8 border-b border-gray-200 flex justify-between items-center bg-gradient-to-r from-blue-600 to-blue-800 text-white">
               <h3 className="text-2xl font-bold">Sipariş Sorgula</h3>
               <button
-                onClick={() => {
-                  resetOrderStatus();
-                }}
+                onClick={resetOrderStatus}
                 className="text-white/80 hover:text-white transition-colors rounded-full hover:bg-white/10 p-2"
               >
                 <X className="h-6 w-6" />
@@ -504,8 +534,8 @@ function App() {
               </form>
 
               {/* Order Status Display */}
-              {showOrderStatus && orderStatus && (
-                <div className={`mt-8 p-6 rounded-xl ${orderStatus.success ? 'bg-green-50' : 'bg-red-50'} border ${orderStatus.success ? 'border-green-200' : 'border-red-200'}`}>
+               {showOrderStatus && orderStatus && (
+                <div className="mt-8 p-6 rounded-xl bg-white border">
                   {orderStatus.success && orderStatus.order ? (
                     <div className="space-y-4">
                       <div className="flex items-center justify-between">
@@ -538,7 +568,7 @@ function App() {
                       </div>
                     </div>
                   ) : (
-                    <div className="text-red-600 font ort-medium text-center py-4">
+                    <div className="text-red-600 font-medium text-center py-4">
                       {orderStatus.error || 'Sipariş bulunamadı.'}
                     </div>
                   )}
@@ -554,23 +584,6 @@ function App() {
 
       {/* Privacy Modal */}
       {showPrivacy && <Privacy onClose={() => setShowPrivacy(false)} />}
-
-      {/* Tawk.to Integration */}
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
-            var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-            (function(){
-              var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-              s1.async=true;
-              s1.src='https://embed.tawk.to/67ae44183a842732607e7f66/1ik0bk0fn';
-              s1.charset='UTF-8';
-              s1.setAttribute('crossorigin','*');
-              s0.parentNode.insertBefore(s1,s0);
-            })();
-          `
-        }}
-      />
     </div>
   );
 }
