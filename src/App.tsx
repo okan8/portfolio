@@ -1,7 +1,20 @@
 import React, { useState } from 'react';
-import { AlertCircle, ShoppingCart, Clock, HeadphonesIcon, CheckCircle2, CreditCard, Shield, AlertTriangle, X, Zap, Lock, Wifi } from 'lucide-react';
+import { AlertCircle, ShoppingCart, Clock, HeadphonesIcon, CheckCircle2, CreditCard, Shield, AlertTriangle, X, Zap, Lock, Wifi, Search } from 'lucide-react';
 import Terms from './pages/Terms';
 import Privacy from './pages/Privacy';
+
+interface OrderStatus {
+  success: boolean;
+  order?: {
+    order_id: number;
+    gamepass_id: string;
+    status: string;
+    price_tl: string;
+    price_rb: string;
+    rb_status: string;
+  };
+  error?: string;
+}
 
 function App() {
   const [gamepassId, setGamepassId] = useState('');
@@ -10,6 +23,13 @@ function App() {
   const [paymentUrl, setPaymentUrl] = useState('');
   const [showTerms, setShowTerms] = useState(false);
   const [showPrivacy, setShowPrivacy] = useState(false);
+  const [showOrderModal, setShowOrderModal] = useState(false);
+  
+  // Order tracking states
+  const [orderId, setOrderId] = useState('');
+  const [orderStatus, setOrderStatus] = useState<OrderStatus | null>(null);
+  const [isCheckingOrder, setIsCheckingOrder] = useState(false);
+  const [showOrderStatus, setShowOrderStatus] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -43,6 +63,55 @@ function App() {
     }
   };
 
+  const handleOrderCheck = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsCheckingOrder(true);
+    setShowOrderStatus(true);
+
+    try {
+      const response = await fetch(`https://robux.tr/shopier/query_order.php?order_id=${orderId}`);
+      const data: OrderStatus = await response.json();
+      setOrderStatus(data);
+    } catch (error) {
+      console.error('Order check error:', error);
+      setOrderStatus({
+        success: false,
+        error: 'Sipariş sorgulama sırasında bir hata oluştu.'
+      });
+    } finally {
+      setIsCheckingOrder(false);
+    }
+  };
+
+  const getStatusColor = (status: string) => {
+    switch (status) {
+      case 'completed':
+        return 'text-green-600';
+      case 'failed':
+        return 'text-red-600';
+      default:
+        return 'text-yellow-600';
+    }
+  };
+
+  const getStatusText = (status: string) => {
+    switch (status) {
+      case 'completed':
+        return 'Tamamlandı';
+      case 'failed':
+        return 'Başarısız';
+      default:
+        return 'Beklemede';
+    }
+  };
+
+  const resetOrderStatus = () => {
+    setOrderId('');
+    setOrderStatus(null);
+    setShowOrderStatus(false);
+    setShowOrderModal(false);
+  };
+
   return (
     <div className="min-h-screen bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-100 via-white to-blue-50">
       {/* Header */}
@@ -55,6 +124,13 @@ function App() {
               <div className="text-lg font-normal mt-1 text-blue-200">Dijital Ürün Satış Platformu</div>
             </h1>
             <div className="flex items-center space-x-6">
+              <button
+                onClick={() => setShowOrderModal(true)}
+                className="flex items-center bg-white/10 px-6 py-3 rounded-full backdrop-blur-sm border border-white/20 shadow-lg hover:bg-white/20 transition-all duration-300"
+              >
+                <Search className="h-5 w-5 mr-2" />
+                <span className="font-medium">Sipariş Sorgula</span>
+              </button>
               <div className="flex items-center bg-white/10 px-6 py-3 rounded-full backdrop-blur-sm border border-white/20 shadow-lg hover:bg-white/20 transition-all duration-300">
                 <HeadphonesIcon className="h-5 w-5 mr-2" />
                 <span className="font-medium">7/24 Destek</span>
@@ -268,6 +344,94 @@ function App() {
                 className="absolute inset-0 w-full h-full border-0"
                 title="Ödeme Sayfası"
               />
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Order Tracking Modal */}
+      {showOrderModal && (
+        <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 z-50">
+          <div className="bg-white rounded-[2rem] shadow-2xl w-full max-w-2xl overflow-hidden relative animate-fadeIn">
+            <div className="p-8 border-b border-gray-200 flex justify-between items-center bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+              <h3 className="text-2xl font-bold">Sipariş Sorgula</h3>
+              <button
+                onClick={() => {
+                  resetOrderStatus();
+                }}
+                className="text-white/80 hover:text-white transition-colors rounded-full hover:bg-white/10 p-2"
+              >
+                <X className="h-6 w-6" />
+              </button>
+            </div>
+            <div className="p-8">
+              <form onSubmit={handleOrderCheck} className="space-y-6">
+                <div>
+                  <label htmlFor="order_id_modal" className="block text-lg font-medium text-gray-700 mb-2">
+                    Sipariş ID
+                  </label>
+                  <input
+                    type="text"
+                    id="order_id_modal"
+                    value={orderId}
+                    onChange={(e) => setOrderId(e.target.value)}
+                    className="w-full px-4 py-3 text-lg border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-blue-100 focus:border-blue-500 transition-all duration-300"
+                    placeholder="Sipariş ID'nizi girin"
+                    required
+                    disabled={isCheckingOrder}
+                  />
+                </div>
+                <button
+                  type="submit"
+                  className="w-full bg-gradient-to-r from-blue-600 to-blue-800 text-white py-4 px-6 rounded-xl text-lg font-bold hover:from-blue-700 hover:to-blue-900 transition-all duration-300 flex items-center justify-center"
+                  disabled={isCheckingOrder}
+                >
+                  <Search className="inline-block mr-2 h-5 w-5" />
+                  {isCheckingOrder ? 'Sorgulanıyor...' : 'Siparişi Sorgula'}
+                </button>
+              </form>
+
+              {/* Order Status Display */}
+              {showOrderStatus && orderStatus && (
+                <div className={`mt-8 p-6 rounded-xl ${orderStatus.success ? 'bg-green-50' : 'bg-red-50'} border ${orderStatus.success ? 'border-green-200' : 'border-red-200'}`}>
+                  {orderStatus.success && orderStatus.order ? (
+                    <div className="space-y-4">
+                      <div className="flex items-center justify-between">
+                        <span className="text-gray-600">Sipariş ID:</span>
+                        <span className="font-bold">{orderStatus.order.order_id}</span>
+                      </div>
+                      <div className="flex items-center justify-between">
+                        <span className="text-gray-600">Gamepass ID:</span>
+                        <span className="font-bold">{orderStatus.order.gamepass_id}</span>
+                      </div>
+                      <div className="flex items-center justify-between">
+                        <span className="text-gray-600">Ödeme Durumu:</span>
+                        <span className={`font-bold ${getStatusColor(orderStatus.order.status)}`}>
+                          {getStatusText(orderStatus.order.status)}
+                        </span>
+                      </div>
+                      <div className="flex items-center justify-between">
+                        <span className="text-gray-600">Robux Durumu:</span>
+                        <span className={`font-bold ${getStatusColor(orderStatus.order.rb_status)}`}>
+                          {getStatusText(orderStatus.order.rb_status)}
+                        </span>
+                      </div>
+                      <div className="flex items-center justify-between">
+                        <span className="text-gray-600">Tutar:</span>
+                        <span className="font-bold">{orderStatus.order.price_tl} TL</span>
+                      </div>
+                      <div className="flex items-center justify-between">
+                        <span className="text-gray-600">Robux Miktarı:</span>
+                        <span className="font-bold">{orderStatus.order.price_rb} Robux</span>
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="text-red-600 font-medium text-center py-4">
+                      {orderStatus.error || 'Sipariş bulunamadı.'}
+                    </div>
+                  )}
+                </div>
+              )}
             </div>
           </div>
         </div>
