@@ -121,7 +121,7 @@ function App() {
             {/* Payment Methods */}
             <div className="mt-10 pt-8 border-t border-gray-200">
               <div className="flex flex-wrap items-center justify-center gap-6">
-                <img src="https://www.mastercard.com.tr/content/dam/public/mastercardcom/tr/tr/images/mc-logo-52.svg" alt="Mastercard" className="h-10" />
+                <img src="https://brand.mastercard.com/content/dam/mccom/brandcenter/thumbnails/mc_dla_symbol_92.png" alt="Mastercard" className="h-10" />
                 <img src="https://www.visa.com.tr/dam/VCOM/regional/ve/romania/blogs/hero-image/visa-logo-800x450.jpg" alt="Visa" className="h-10" />
                 <div className="flex items-center px-6 py-3 bg-gray-50 rounded-xl shadow-sm">
                   <CreditCard className="h-6 w-6 text-blue-600 mr-3" />
