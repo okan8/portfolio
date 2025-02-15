@@ -1,4 +1,5 @@
 "use client"
+import type React from "react"
 import { useState, useEffect, useCallback, useMemo } from "react"
 import { Coins } from "lucide-react"
 import Terms from "./pages/Terms"
@@ -38,7 +39,11 @@ interface OrderStatus {
   error?: string
 }
 
-function App() {
+interface AppProps {
+  children?: React.ReactNode
+}
+
+const App: React.FC<AppProps> = ({ children }) => {
   const [gamepassId, setGamepassId] = useState("")
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showModal, setShowModal] = useState(false)
@@ -208,20 +213,24 @@ function App() {
       <Header onOpenOrderModal={() => setShowOrderModal(true)} />
 
       <main className="max-w-7xl mx-auto px-4 py-8 md:py-16">
-        <HeroSection />
-        <SitePurposeSection />
-        <NoticesGrid />
+        {children || (
+          <>
+            <HeroSection />
+            <SitePurposeSection />
+            <NoticesGrid />
 
-        <div className="bg-white rounded-[1.5rem] md:rounded-[2.5rem] shadow-2xl p-6 md:p-12 mb-12 md:mb-20 border border-blue-100 transform hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] transition-all duration-500">
-          <h3 className="text-3xl md:text-4xl font-black mb-6 md:mb-10 text-gray-800 bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent flex items-center">
-            <Coins className="h-8 md:h-10 w-8 md:w-10 mr-3 md:mr-4 text-yellow-500" />
-            Yeni Sipariş Oluştur
-          </h3>
-          <GamepassForm onSubmit={handlePreviewGamepass} isSubmitting={isLoadingPreview} />
-        </div>
+            <div className="bg-white rounded-[1.5rem] md:rounded-[2.5rem] shadow-2xl p-6 md:p-12 mb-12 md:mb-20 border border-blue-100 transform hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] transition-all duration-500">
+              <h3 className="text-3xl md:text-4xl font-black mb-6 md:mb-10 text-gray-800 bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent flex items-center">
+                <Coins className="h-8 md:h-10 w-8 md:w-10 mr-3 md:mr-4 text-yellow-500" />
+                Yeni Sipariş Oluştur
+              </h3>
+              <GamepassForm onSubmit={handlePreviewGamepass} isSubmitting={isLoadingPreview} />
+            </div>
 
-        <FeaturesGrid />
-        <CompletedOrders />
+            <FeaturesGrid />
+            <CompletedOrders />
+          </>
+        )}
         <Footer onShowTerms={() => setShowTerms(true)} onShowPrivacy={() => setShowPrivacy(true)} />
       </main>
 
