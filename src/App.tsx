@@ -45,7 +45,7 @@ function App() {
   const [showOrderStatus, setShowOrderStatus] = useState(false);
 
   const calculateTLPrice = (robuxPrice: number) => {
-    return (robuxPrice / 1429) * 250;
+    return (robuxPrice / 1443) * 260;
   };
 
   const handlePreviewGamepass = async () => {
@@ -616,6 +616,61 @@ function App() {
 
       {/* Privacy Modal */}
       {showPrivacy && <Privacy onClose={() => setShowPrivacy(false)} />}
+       {/* Son Siparişler Tablosu */}
+
+  <div className="max-w-7xl mx-auto px-4 mb-12">
+        <div className="bg-white rounded-[1.5rem] shadow-xl p-6 md:p-8">
+          <h3 className="text-2xl font-bold mb-6 flex items-center text-gray-800">
+            <CheckCircle2 className="mr-3 text-green-500 h-7 w-7" />
+            Son Başarılı Siparişler
+          </h3>
+          <div className="overflow-x-auto">
+            <table className="min-w-full">
+              <thead>
+                <tr className="border-b border-gray-200">
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-gray-600">Sipariş ID</th>
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-gray-600">Gamepass ID</th>
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-gray-600">Tutar</th>
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-gray-600">Robux</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-100">
+                {isLoadingOrders ? (
+                  <tr>
+                    <td colSpan={4} className="px-4 py-8 text-center text-gray-500">
+                      <div className="flex items-center justify-center">
+                        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
+                      </div>
+                    </td>
+                  </tr>
+                ) : recentOrders.length > 0 ? (
+                  recentOrders.map((order) => (
+                    <tr key={order.order_id} className="hover:bg-blue-50/50 transition-colors">
+                      <td className="px-4 py-3 text-sm text-gray-700">#{order.order_id}</td>
+                      <td className="px-4 py-3 text-sm text-gray-700">{order.gamepass_id}</td>
+                      <td className="px-4 py-3 text-sm text-gray-700">{order.price_tl} ₺</td>
+                      <td className="px-4 py-3 text-sm text-gray-700 flex items-center">
+                        <Coins className="h-4 w-4 mr-2 text-yellow-500" />
+                        {order.price_rb}
+                      </td>
+                    </tr>
+                  ))
+                ) : (
+                  <tr>
+                    <td colSpan={4} className="px-4 py-8 text-center text-gray-500">
+                      Henüz başarılı sipariş bulunmuyor.
+                    </td>
+                  </tr>
+                )}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+  );
+  
+}
+
     </div>
   );
 }
