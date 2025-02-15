@@ -45,7 +45,7 @@ function App() {
   const [showOrderStatus, setShowOrderStatus] = useState(false);
 
   const calculateTLPrice = (robuxPrice: number) => {
-    return (robuxPrice / 1443) * 260;
+    return (robuxPrice / 1429) * 250;
   };
 
   const handlePreviewGamepass = async () => {
