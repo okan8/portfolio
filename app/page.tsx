@@ -57,7 +57,7 @@ export default function Home() {
   const [showOrderStatus, setShowOrderStatus] = useState(false)
 
   const calculateTLPrice = useCallback((robuxPrice: number) => {
-    return (robuxPrice / 1443) * 260
+    return (robuxPrice / 1429) * 250
   }, [])
 
   const handlePreviewGamepass = useCallback(
