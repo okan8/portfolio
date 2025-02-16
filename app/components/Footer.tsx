@@ -25,7 +25,9 @@ export const Footer: React.FC<FooterProps> = ({ onShowTerms, onShowPrivacy }) =>
         </button>
         'nı kabul etmiş olursunuz.
       </p>
-      <p className="text-sm md:text-base text-gray-500">© 2024 Robux.tr - Tüm hakları saklıdır.</p>
+      <p className="text-sm md:text-base text-gray-500">
+          © 2024 Robux.tr - Tüm hakları saklıdır. | Bu site siberonculer.com tarafından yapılmıştır.
+        </p>
     </footer>
   )
 }
