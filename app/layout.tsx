@@ -1,20 +1,24 @@
-import type { Metadata } from 'next'
-import './globals.css'
+import type React from "react"
+import type { Metadata } from "next"
+import { Inter } from "next/font/google"
+import "./styles/globals.css"
+
+const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.dev',
+  title: "Robux.tr - Güvenli ve Hızlı Robux Alım Satım",
+  description: "Türkiye'nin en güvenilir dijital ürün satış platformunda hızlı ve güvenli Robux alışverişi yapın.",
+    generator: 'v0.dev'
 }
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="tr">
+      <body className={inter.className}>{children}</body>
     </html>
   )
 }
+
+
+
+import './globals.css'

@@ -7,7 +7,7 @@ interface FooterProps {
 
 export const Footer: React.FC<FooterProps> = ({ onShowTerms, onShowPrivacy }) => {
   return (
-    <div className="mt-12 md:mt-20 text-center">
+    <footer className="mt-16 md:mt-24 text-center">
       <p className="mb-4 text-base md:text-lg text-gray-600">
         Sipariş oluşturarak{" "}
         <button
@@ -26,7 +26,7 @@ export const Footer: React.FC<FooterProps> = ({ onShowTerms, onShowPrivacy }) =>
         'nı kabul etmiş olursunuz.
       </p>
       <p className="text-sm md:text-base text-gray-500">© 2024 Robux.tr - Tüm hakları saklıdır.</p>
-    </div>
+    </footer>
   )
 }
 
