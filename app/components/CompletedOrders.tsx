@@ -60,8 +60,7 @@ export const CompletedOrders: React.FC = () => {
         <table className="w-full text-sm md:text-base">
           <thead>
             <tr className="bg-gray-100">
-              <th className="px-4 py-3 text-left">Sipariş ID</th>
-              <th className="px-4 py-3 text-left">Gamepass ID</th>
+
               <th className="px-4 py-3 text-left">Tutar (TL)</th>
               <th className="px-4 py-3 text-left">Robux</th>
               <th className="px-4 py-3 text-left">Durum</th>
@@ -70,8 +69,7 @@ export const CompletedOrders: React.FC = () => {
           <tbody>
             {orders.map((order) => (
               <tr key={order.order_id} className="border-b border-gray-200">
-                <td className="px-4 py-3">{order.order_id}</td>
-                <td className="px-4 py-3">{order.gamepass_id}</td>
+
                 <td className="px-4 py-3">{order.price_tl} TL</td>
                 <td className="px-4 py-3">{order.price_rb}</td>
                 <td className="px-4 py-3">
