@@ -9,6 +9,7 @@ import { SitePurposeSection } from "./components/SitePurposeSection"
 import { GamepassForm } from "./components/GamepassForm"
 import { NoticesGrid } from "./components/NoticesGrid"
 import { FeaturesGrid } from "./components/FeaturesGrid"
+import { Calculator } from "@/components/Calculator"
 import { Footer } from "./components/Footer"
 import { GamepassPreviewModal } from "./components/GamepassPreviewModal"
 import { PaymentModal } from "./components/PaymentModal"
@@ -211,6 +212,8 @@ export default function Home() {
         <HeroSection />
         <SitePurposeSection />
         <NoticesGrid />
+
+        <Calculator />
 
         <div className="bg-white rounded-[1.5rem] md:rounded-[2.5rem] shadow-2xl p-6 md:p-12 mb-12 md:mb-20 border border-blue-100 transform hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] transition-all duration-500">
           <h3 className="text-3xl md:text-4xl font-black mb-6 md:mb-10 text-gray-800 bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent flex items-center">

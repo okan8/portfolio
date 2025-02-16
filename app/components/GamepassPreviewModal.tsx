@@ -1,4 +1,7 @@
+"use client"
+
 import type React from "react"
+import { useState, useEffect } from "react"
 import { X, Coins, ShoppingCart, AlertTriangle } from "lucide-react"
 
 interface GamepassDetails {
@@ -30,7 +33,31 @@ export const GamepassPreviewModal: React.FC<GamepassPreviewModalProps> = ({
   onSubmit,
   isSubmitting,
 }) => {
+  const [isChecked, setIsChecked] = useState(false)
+  const [availableBalance, setAvailableBalance] = useState<number | null>(null)
+  const [balanceError, setBalanceError] = useState<string | null>(null)
+
+  useEffect(() => {
+    const fetchBalance = async () => {
+      try {
+        const response = await fetch("https://robux.tr/shopier/balance.php")
+        const data = await response.json()
+        setAvailableBalance(data.robux)
+      } catch (error) {
+        console.error("Error fetching balance:", error)
+        setBalanceError("Stok bilgisi alınamadı.")
+      }
+    }
+
+    if (show) {
+      fetchBalance()
+    }
+  }, [show])
+
   if (!show) return null
+
+  const discountedRobux = gamepassDetails ? Math.floor(gamepassDetails.price * 0.7) : 0
+  const hasEnoughStock = availableBalance !== null && gamepassDetails && availableBalance >= gamepassDetails.price
 
   return (
     <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 z-50">
@@ -72,10 +99,17 @@ export const GamepassPreviewModal: React.FC<GamepassPreviewModalProps> = ({
                       <span className="font-medium">{gamepassDetails.creator.name}</span>
                     </div>
                     <div className="flex justify-between items-center">
-                      <span className="text-blue-700">Robux:</span>
+                      <span className="text-blue-700">Gamepass Fiyatı:</span>
                       <span className="font-medium flex items-center">
                         <Coins className="h-5 md:h-6 w-5 md:w-6 mr-2 text-yellow-500" />
                         {gamepassDetails.price} R$
+                      </span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-blue-700">Size Gelecek Robux:</span>
+                      <span className="font-medium flex items-center">
+                        <Coins className="h-5 md:h-6 w-5 md:w-6 mr-2 text-green-500" />
+                        {discountedRobux} R$
                       </span>
                     </div>
                     <div className="flex justify-between items-center">
@@ -85,10 +119,40 @@ export const GamepassPreviewModal: React.FC<GamepassPreviewModalProps> = ({
                   </div>
                 </div>
 
+                {balanceError ? (
+                  <div className="bg-red-100 border-l-4 border-red-500 text-red-700 p-4 rounded-md">
+                    <p className="font-bold">Hata</p>
+                    <p>{balanceError}</p>
+                  </div>
+                ) : !hasEnoughStock ? (
+                  <div className="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 rounded-md">
+                    <p className="font-bold">Yetersiz Stok</p>
+                    <p>
+                      Şu anda bu kadar stok yok. Mevcut stok: {availableBalance} R$. Lütfen daha düşük miktarda bir
+                      gamepass seçin veya daha sonra tekrar deneyin.
+                    </p>
+                  </div>
+                ) : null}
+
+                <div className="flex items-center space-x-2">
+                  <input
+                    type="checkbox"
+                    id="gamepass-confirmation"
+                    checked={isChecked}
+                    onChange={(e) => setIsChecked(e.target.checked)}
+                    className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  />
+                  <label htmlFor="gamepass-confirmation" className="text-sm text-gray-700">
+                    Sağladığım gamepass ID'nin bana ait olduğunu kabul ediyorum.
+                  </label>
+                </div>
+
                 <button
                   onClick={onSubmit}
-                  className="w-full bg-gradient-to-r from-blue-600 to-blue-800 text-white py-4 md:py-5 px-6 md:px-8 rounded-xl text-lg md:text-xl font-bold hover:from-blue-700 hover:to-blue-900 transition-all duration-300 flex items-center justify-center"
-                  disabled={isSubmitting}
+                  className={`w-full bg-gradient-to-r from-blue-600 to-blue-800 text-white py-4 md:py-5 px-6 md:px-8 rounded-xl text-lg md:text-xl font-bold hover:from-blue-700 hover:to-blue-900 transition-all duration-300 flex items-center justify-center ${
+                    !isChecked || isSubmitting || !hasEnoughStock ? "opacity-50 cursor-not-allowed" : ""
+                  }`}
+                  disabled={!isChecked || isSubmitting || !hasEnoughStock}
                 >
                   <ShoppingCart className="inline-block mr-3 h-5 md:h-6 w-5 md:w-6" />
                   {isSubmitting ? "İşleniyor..." : "Satın Al"}
